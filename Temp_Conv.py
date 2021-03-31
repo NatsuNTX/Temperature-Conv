@@ -5,7 +5,6 @@ Link to Original Repo: https://github.com/Agung-Krisna/Temperature-Conv
 """
 
 # Let's Import Some Stuff
-import time
 from os import system
 from Interaction.Yōkoso import YokosoSensei
 from sys import platform
@@ -33,7 +32,7 @@ def isPythonisSupport():
 isPythonisSupport() # Check For Python Version
 if checkOsType() == 2:
     system("clear")
-    player.playBGM()
+    #player.playBGM() Not Work in Linux for Some Reason
     YokosoSensei.StartInteraction("")
 elif checkOsType() == 1:
     system("cls")
